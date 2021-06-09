@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SvR-Bd-Z0H">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HelloSwitchingViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.68481639006944084" green="0.88435537051692881" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="xDd-UD-JDA">
+                        <barButtonItem key="rightBarButtonItem" title="Go to View 2" id="lXZ-bm-sKA">
+                            <connections>
+                                <segue destination="Uu3-0D-oFV" kind="show" id="BKe-ZG-TgC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.2" y="103.89805097451276"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="bGj-eX-BTn">
+            <objects>
+                <viewController title="Home" id="Uu3-0D-oFV" customClass="PinkViewController" customModule="HelloSwitchingViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wBl-qd-wtJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="K9X-cs-kmd"/>
+                        <color key="backgroundColor" red="1" green="0.88820016794222945" blue="0.92385740531001859" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pink" id="uj4-UR-EHs">
+                        <barButtonItem key="rightBarButtonItem" title="Go to View 3" id="oiU-zw-nKK">
+                            <connections>
+                                <segue destination="0HJ-Kc-4GY" kind="show" id="u6a-bm-491"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FoP-xe-i5T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1887" y="102"/>
+        </scene>
+        <!--Tiffany Green-->
+        <scene sceneID="tV2-ca-0hN">
+            <objects>
+                <viewController id="0HJ-Kc-4GY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pyk-NG-3He">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="99X-op-0xK"/>
+                        <color key="backgroundColor" red="0.85532153945164868" green="1" blue="0.90207795342067065" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tiffany Green" id="WuL-6L-laG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4L2-8F-owh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2681" y="99"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fYY-Zp-HCR">
+            <objects>
+                <navigationController id="SvR-Bd-Z0H" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JgL-kh-IoG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zo1-31-RAh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xBY-25-R1t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="105"/>
+        </scene>
+    </scenes>
+</document>
